@@ -51,20 +51,18 @@
         mo_bs_an: mo_bs_an {
             compatible = "zmk,behavior-mod-morph";
             label = "MO_BS_AN";
-            bindings = <&kp INT_HENKAN>, <&kp LANG_ZENKAKUHANKAKU>;
+            bindings = <&kp JP_YEN>, <&kp JP_UNDERSCORE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
         mo_bs_pipe: mo_bs_pipe {
             compatible = "zmk,behavior-mod-morph";
             label = "MO_BS_PIPE";
-            bindings = <&kp INT_HENKAN>, <&kp INT_HENKAN>;
+            bindings = <&kp JP_YEN>, <&kp JP_PIPE>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
