@@ -41,6 +41,26 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        mo_bs_an: mo_bs_an {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MO_BS_AN";
+            bindings = <&kp INT_HENKAN>, <&kp LANG_ZENKAKUHANKAKU>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mo_bs_pipe: mo_bs_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MO_BS_PIPE";
+            bindings = <&kp INT_HENKAN>, <&kp INT_HENKAN>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -59,9 +79,9 @@
 
         FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT                                        &kp ASTRK      &kp LEFT_PARENTHESIS  &kp MINUS         &kp EQUAL          &kp NON_US_BACKSLASH
+&kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT                                        &kp ASTRK      &kp LEFT_PARENTHESIS  &kp MINUS         &kp EQUAL          &mo_bs_pipe
 &trans           &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp AMPERSAND      &trans         &kp PERIOD       &kp AMPERSAND  &kp EQUAL             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSPACE
-&trans           &trans          &kp DOWN      &kp COLON        &kp DOUBLE_QUOTES  &to 0          &kp COMMA        &kp SLASH      &kp SEMICOLON         &kp SINGLE_QUOTE  &kp BACKSLASH      &kp ENTER
+&trans           &trans          &kp DOWN      &kp COLON        &kp DOUBLE_QUOTES  &to 0          &kp COMMA        &kp SLASH      &kp SEMICOLON         &kp SINGLE_QUOTE  &mo_bs_an          &kp ENTER
 &kp LCTRL        &kp LEFT_ALT    &kp ESCAPE    &kp LEFT_WIN     &kp TAB            &kp SPACE      &kp PRINTSCREEN  &trans                                                                    &kp RIGHT_SHIFT
             >;
         };
