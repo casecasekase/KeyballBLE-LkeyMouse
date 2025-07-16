@@ -127,7 +127,7 @@
 &kp LCTRL  &kp LEFT_ALT  &kp ESCAPE  &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &to 1                                &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&new_behavior>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
