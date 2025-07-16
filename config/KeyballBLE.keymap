@@ -102,6 +102,16 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
     };
@@ -117,7 +127,7 @@
 &kp LCTRL  &kp LEFT_ALT  &kp ESCAPE  &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &to 1                                &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&new_behavior>;
         };
 
         FUNCTION {
