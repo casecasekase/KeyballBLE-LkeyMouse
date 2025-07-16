@@ -110,5 +110,10 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
+        // ここに sensor-bindings を追加します
+        sensor-bindings = <
+            &inc_dec_msc SCRL_UP SCRL_DOWN, // left_encoder が回転したらマウススクロール（上/下）
+            &inc_dec_msc SCRL_UP SCRL_DOWN  // right_encoder が回転したらマウススクロール（上/下）
+        >;
     };
 };
