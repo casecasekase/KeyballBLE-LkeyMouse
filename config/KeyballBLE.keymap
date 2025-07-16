@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 25
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
@@ -17,7 +16,7 @@
 
 // マウススクロール用
 
-#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
     flavor = "balanced";
