@@ -102,9 +102,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
-
     };
 
     keymap {
@@ -136,15 +136,6 @@
 &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp COLON     &kp LC(LA(KP_NUMBER_0))      &kp EQUAL  &kp DOUBLE_QUOTES  &kp PERIOD  &trans     &trans      &kp BACKSPACE
 &trans  &trans          &trans        &kp DOWN_ARROW   &kp MINUS     &trans                       &trans     &kp SLASH          &trans      &mop_left  &mop_right  &kp ENTER
 &trans  &trans          &trans        &zero_c          &bt BT_SEL 1  &bt BT_SEL 2                 &to 0      &to 1                                                 &kp RIGHT_SHIFT
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
