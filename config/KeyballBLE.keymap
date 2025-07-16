@@ -70,7 +70,7 @@
         mop_left: mop_left {
             compatible = "zmk,behavior-mod-morph";
             label = "MOP_LEFT";
-            bindings = <&mkp MB1>, <&mkp MB5>;
+            bindings = <&mkp MB1>, <&mkp MB4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -79,7 +79,7 @@
         mop_right: mop_right {
             compatible = "zmk,behavior-mod-morph";
             label = "MOP_RIGHT";
-            bindings = <&mkp MB2>, <&mkp MB4>;
+            bindings = <&mkp MB2>, <&mkp MB5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
