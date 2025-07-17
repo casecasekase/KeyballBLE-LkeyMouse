@@ -39,7 +39,7 @@
         to_layer_3: to_layer_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 3>, <&macro_press>, <&kp MACRO_PLACEHOLDER>;
+            bindings = <&to 3>, <&macro_press>, <&to 0>, <&macro_release>;
 
             label = "TO_LAYER_3";
         };
@@ -138,6 +138,8 @@
 &trans           &trans          &trans        &kp DOWN_ARROW   &kp DOUBLE_QUOTES  &kp COLON      &kp COMMA   &kp SLASH      &kp SEMICOLON         &kp SINGLE_QUOTE  &kp BACKSLASH      &kp ENTER
 &kp LCTRL        &kp LEFT_ALT    &trans        &kp GRAVE        &kp TAB            &kp SPACE      &to 2       &to 0                                                                     &kp RIGHT_SHIFT
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -151,9 +153,9 @@
 
         MOVE {
             bindings = <
-&trans  &trans  &trans  &trans          &trans                                       &trans  &trans     &trans      &trans  &trans
-&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans               &trans  &trans  &mop_left  &mop_right  &trans  &trans
-&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans  &trans     &trans      &trans  &trans
+&trans  &trans  &trans  &trans          &trans                                       &trans  &trans  &trans     &trans      &trans
+&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans               &trans  &trans  &trans  &mop_left  &mop_right  &trans
+&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans  &trans  &trans     &trans      &trans
 &trans  &trans  &trans  &trans          &trans          &trans               &trans  &trans                                 &trans
             >;
 
