@@ -18,6 +18,7 @@
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 25
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
 
 &mt {
     flavor = "balanced";
