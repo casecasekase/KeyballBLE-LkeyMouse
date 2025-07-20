@@ -133,9 +133,9 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E                &kp R      &kp T                                &kp Y  &kp U  &kp I      &kp O      &kp P
-&kp A      &kp S         &kp D                &kp F      &kp G    &mkp MB1        &kp PERIOD  &kp H  &kp J  &kp K      &kp L      &kp BACKSPACE
-&kp Z      &kp X         &kp C                &kp V      &kp B    &kp DELETE      &kp COMMA   &kp N  &kp M  &kp MINUS  &kp SLASH  &kp ENTER
+&kp Q      &kp W         &kp E                &kp R      &kp T                                &kp Y                 &kp U  &kp I      &kp O      &kp P
+&kp A      &kp S         &kp D                &kp F      &kp G    &mkp MB1        &kp PERIOD  &kp H                 &kp J  &kp K      &kp L      &kp BACKSPACE
+&kp Z      &kp X         &kp C                &kp V      &kp B    &kp DELETE      &kp COMMA   &kp N                 &kp M  &kp MINUS  &kp SLASH  &kp ENTER
 &kp LCTRL  &kp LEFT_ALT  &esc_mo_layer 3 ESC  &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &lay1_lay2_layer 2 1                               &kp RIGHT_SHIFT
             >;
 
@@ -158,15 +158,15 @@
 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON  &kp DOUBLE_QUOTES                                        &kp F1   &kp F2  &kp F3  &kp F4   &kp F5
 &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SLASH          &kp LC(LA(KP_NUMBER_0))      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &kp BACKSPACE
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans             &trans                       &kp F11  &kp F12  &trans  &trans  &trans   &kp ENTER
-&kp NUMBER_0  &kp PERIOD    &kp ENTER     &zero_c    &bt BT_SEL 1       &bt BT_SEL 2                 &to 0    &to 1                             &kp RIGHT_SHIFT
+&kp NUMBER_0  &kp PERIOD    &kp ENTER     &zero_c    &bt BT_SEL 1       &bt BT_SEL 2                 &trans   &trans                            &kp RIGHT_SHIFT
             >;
         };
 
         MOVE {
             bindings = <
-&trans  &trans  &trans  &trans          &trans                                       &trans  &mkp MB5  &trans     &trans      &trans
-&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans               &trans  &trans  &mkp MB4  &mop_left  &mop_right  &trans
-&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans  &trans    &trans     &trans      &trans
+&trans  &trans  &trans  &trans          &trans                                       &trans  &trans    &mop_left  &mop_right  &trans
+&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans               &trans  &trans  &mkp MB5  &mop_left  &mop_right  &trans
+&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans  &mkp MB4  &mop_left  &mop_right  &trans
 &trans  &trans  &trans  &trans          &trans          &trans               &trans  &trans                                   &trans
             >;
 
