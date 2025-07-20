@@ -125,7 +125,7 @@
 &kp Q      &kp W         &kp E        &kp R      &kp T                                &kp Y  &kp U  &kp I      &kp O      &kp P
 &kp A      &kp S         &kp D        &kp F      &kp G    &mkp MB1        &kp PERIOD  &kp H  &kp J  &kp K      &kp L      &kp BACKSPACE
 &kp Z      &kp X         &kp C        &kp V      &kp B    &kp DELETE      &kp COMMA   &kp N  &kp M  &kp MINUS  &kp SLASH  &kp ENTER
-&kp LCTRL  &kp LEFT_ALT  &esc_mo_layer 1 ESC &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &to 1                               &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_ALT  &esc_mo_layer 2 ESC &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &to 1                               &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
