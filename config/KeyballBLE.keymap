@@ -58,11 +58,10 @@
         esc_mo_layer: esc_mo_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_MO_LAYER";
-            #binding-cells = <2>; // ホールドとタップの2つのバインディングセルを使用
-            tapping-term-ms = <200>; // タップとホールドを区別する時間（ミリ秒）。適宜調整してください。
-            flavor = "tap-preferred"; // タップが優先される設定
-            // bindingsの最初の要素がホールド、2番目の要素がタップの動作
-            bindings = <&mo 3>, <&kp ESCAPE>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
         };
         mo_bs_an: mo_bs_an {
             compatible = "zmk,behavior-mod-morph";
@@ -126,7 +125,7 @@
 &kp Q      &kp W         &kp E        &kp R      &kp T                                &kp Y  &kp U  &kp I      &kp O      &kp P
 &kp A      &kp S         &kp D        &kp F      &kp G    &mkp MB1        &kp PERIOD  &kp H  &kp J  &kp K      &kp L      &kp BACKSPACE
 &kp Z      &kp X         &kp C        &kp V      &kp B    &kp DELETE      &kp COMMA   &kp N  &kp M  &kp MINUS  &kp SLASH  &kp ENTER
-&kp LCTRL  &kp LEFT_ALT  &esc_mo_layer &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &to 1                               &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_ALT  &esc_mo_layer 1 ESC &kp GRAVE  &kp TAB  &kp SPACE       &to 2       &to 1                               &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
