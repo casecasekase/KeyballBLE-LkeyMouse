@@ -55,7 +55,7 @@
 
     behaviors {
         // Escとレイヤー切り替えのHold-Tap動作
-        lt_to_layer_3: lt_to_layer_3 {
+        esc_mo_layer: esc_mo_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_MO_LAYER";
             #binding-cells = <2>; // ホールドとタップの2つのバインディングセルを使用
